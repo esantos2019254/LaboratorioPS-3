@@ -2,7 +2,7 @@ import { response, request } from "express";
 import bcryptjs from 'bcryptjs';
 import User from './user.model.js';
 
-export const usersGet = async () => {
+export const usersGet = async (req = request, res = response) => {
     
     const { limite, desde } = req.query;
     const query = { state: true };
@@ -20,7 +20,7 @@ export const usersGet = async () => {
     });
 }
 
-export const usersPost = async () => {
+export const usersPost = async (req, res) => {
     
     const { name, lastName, userName, email, password } = req.body;
     const user = new User({name, lastName, userName, email, password});
@@ -48,7 +48,7 @@ export const getUserById = async (req, res) => {
 export const usersPut = async (req, res = response) => {
 
     const { id } = req.params;
-    const {_id, email, estado, ...resto} = req.body;
+    const {_id, password, email, estado, ...resto} = req.body;
 
     if(password){
         const salt = bcryptjs.genSaltSync();
