@@ -1,0 +1,61 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "users",
+    "dateExported": "2024-03-01T13:48:45.578Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5e194db9-3582-431a-bf23-02c94072df2f",
+            "colId": "7b609595-c461-4834-b63b-b25bb96ff7c6",
+            "containerId": "",
+            "name": "viewUsers",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/users",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-01T13:39:37.856Z",
+            "modified": "2024-03-01T13:40:34.967Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f4f7b96e-32cc-4dee-af38-ac568c46c564",
+            "colId": "7b609595-c461-4834-b63b-b25bb96ff7c6",
+            "containerId": "",
+            "name": "createAccount",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T13:42:37.645Z",
+            "modified": "2024-03-01T13:44:16.162Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Elmer\",\n  \"lastName\": \"Santos\",\n  \"userName\": \"esantos\",\n  \"email\": \"esantos@kinal.edu.gt\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ac0c301a-a79b-4d2d-a759-ff4d64a29ec8",
+            "colId": "7b609595-c461-4834-b63b-b25bb96ff7c6",
+            "containerId": "",
+            "name": "editAccount",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/users/65e1dbafdbd21fd55e861d31",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-01T13:44:32.181Z",
+            "modified": "2024-03-01T13:45:53.895Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Rodrigo\",\n  \"lastName\": \"Garcia\",\n  \"userName\": \"rgarcia\",\n  \"password\": \"12345678\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
