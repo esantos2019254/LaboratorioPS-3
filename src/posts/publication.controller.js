@@ -1,6 +1,5 @@
 import { response, request} from "express";
-import bcryptjs from 'bcryptjs';
-import Publication from "./publication.model";
+import Publication from "./publication.model.js";
 
 export const postsGet = async (req = request, res = response) => {
     
