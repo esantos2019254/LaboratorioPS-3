@@ -45,22 +45,37 @@ export const getUserById = async (req, res) => {
     });
 }
 
-export const usersPut = async (req, res = response) => {
-
+export const usersPut = async (req, res) => {
     const { id } = req.params;
-    const {_id, password, email, estado, ...resto} = req.body;
+    const { oldPassword, ...resto } = req.body;
 
-    if(password){
-        const salt = bcryptjs.genSaltSync();
-        resto.password = bcryptjs.hashSync(password, salt);
+    try {
+
+        const user = await User.findById(id);
+        const validOldPassword = bcryptjs.compareSync(oldPassword, user.password);
+        
+        if (!validOldPassword) {
+            return res.status(401).json({
+                msg: "The old password is invalid. You can't update.",
+            });
+        }
+
+        if (resto.password) {
+            const salt = bcryptjs.genSaltSync();
+            resto.password = bcryptjs.hashSync(resto.password, salt);
+        }
+
+        await User.findByIdAndUpdate(id, resto);
+        const updatedUser = await User.findById(id);
+
+        res.status(200).json({
+            msg: 'User successfully updated',
+            user: updatedUser
+        });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            msg: "Contact the admin.",
+        });
     }
-
-    await User.findByIdAndUpdate(id, resto);
-
-    const user = await User.findOne({_id: id});
-
-    res.status(200).json({
-        msg:'User Successfully Update',
-        user
-    });
 }
