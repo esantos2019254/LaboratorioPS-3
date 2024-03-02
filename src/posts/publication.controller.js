@@ -23,7 +23,7 @@ export const postsPost = async (req, res) => {
 
     const {tittle, mainText, category} = req.body;
     const authorId = req.user.id;
-    const publication = new Publication({tittle, mainText, category, authorId});
+    const publication = new Publication({tittle, mainText, category, author: authorId});
 
     await publication.save();
 

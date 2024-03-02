@@ -8,7 +8,10 @@ import {
     getPublicationById
 } from './publication.controller.js';
 import { existsPublicationById } from "../helpers/db-validator.js";
-import { validateFields } from "../middlewares/validate-fields.js";
+import { 
+    validateFields,
+    validateUserUpdate
+} from "../middlewares/validate-fields.js";
 import { validateJWT } from "../middlewares/validar-jwt.js";
 
 const router = Router();
@@ -29,7 +32,9 @@ router.post(
     "/",
     [
         validateJWT,
-        check("name", "this name is required").not().isEmpty(),
+        check("tittle", "this tittle is required").not().isEmpty(),
+        check("mainText", "this mainText is required").not().isEmpty(),
+        check("category", "this category is required").not().isEmpty(),
         validateFields,
     ],
     postsPost
@@ -41,6 +46,7 @@ router.put(
         validateJWT,
         check("id", "This id is not valid").isMongoId(),
         check("id").custom(existsPublicationById),
+        validateUserUpdate,
         validateFields,
     ], postsPut);
 
@@ -50,6 +56,7 @@ router.delete(
         validateJWT,
         check("id", "This id is not valid").isMongoId(),
         check("id").custom(existsPublicationById),
+        validateUserUpdate,
         validateFields,
     ], postsDelete);
 
