@@ -9,13 +9,20 @@ export const postsGet = async (req = request, res = response) => {
     const [total, posts] = await Promise.all([
         Publication.countDocuments(query),
         Publication.find(query)
+        .populate('author', 'userName')
         .skip(Number(desde))
-        .limit(Number(limite)) 
+        .limit(Number(limite))
+        .lean()
     ]);
+
+    const modifiedPosts = posts.map(post => ({
+        ...post,
+        author: post.author.userName
+    }));
 
     res.status(200).json({
         total,
-        posts
+        posts: modifiedPosts
     });
 }
 

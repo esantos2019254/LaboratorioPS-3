@@ -1,0 +1,90 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Posts",
+    "dateExported": "2024-03-02T22:36:15.757Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "5b8a5222-994e-4c08-a618-d08a7e77f0c2",
+            "colId": "f186a674-09ed-47d4-a04d-b27f4cae22cb",
+            "containerId": "",
+            "name": "newPublication",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/posts",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-02T19:59:04.576Z",
+            "modified": "2024-03-02T22:34:19.028Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzODg2MWMxNjAwMzAzMTMwMTY0NmYiLCJpYXQiOjE3MDk0MTg4MTIsImV4cCI6MTcwOTQyMjQxMn0.DyAA90-Ne2z1ti12lUD7ptqEi6jZOaWCI7A8J5LD5g4"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tittle\": \"Las redes\",\n  \"mainText\": \"asdfasdfsadfsdafsadfsadfsadfasdffffffffffffffffffffffffffffffffffffffdsffffffffffffffffffffffasdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdsfasdfsdafasdfsdafsadfasdfasdfsdfasdfsadfasdfasdfasdfsdafsdafasdfsadfsdafsdffdfdfffdafsdfsdfsdf\",\n  \"category\": \"Tecnologia\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7b2c24c4-8f2b-48c6-8673-6b5834c3c2b1",
+            "colId": "f186a674-09ed-47d4-a04d-b27f4cae22cb",
+            "containerId": "",
+            "name": "viewPosts",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/posts",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-02T20:27:31.526Z",
+            "modified": "2024-03-02T20:27:48.943Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3045feb3-2fec-4bf2-a570-c88f30083668",
+            "colId": "f186a674-09ed-47d4-a04d-b27f4cae22cb",
+            "containerId": "",
+            "name": "editPublication",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/posts/65e3888cc160030313016473",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-02T20:29:05.734Z",
+            "modified": "2024-03-02T21:27:31.279Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjliYzE4YTYzNjdmZjU4OTQ1ZjAiLCJpYXQiOjE3MDk0MTQzNjEsImV4cCI6MTcwOTQxNzk2MX0.HoI3vH8niGO-a9EkMEa_IomUorqs6HkiiR2jLRurHJQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"tittle\": \"Lenguaje\",\n  \"mainText\": \"asdfasdfsadfsdafsadfsadfsadfasdfffffffffffffffffffffffffffffffffffffffffffffffffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffffdsfasdfsdafasdfsdafsadfasdfasdfsdfasdfsadfasdfasdfasdfsdafsdafasdfsadfsdafsdffdfdfffdafsdfsdfsdf\",\n  \"category\": \"Informacion\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d9782050-6b41-4b67-9873-6671963a531c",
+            "colId": "f186a674-09ed-47d4-a04d-b27f4cae22cb",
+            "containerId": "",
+            "name": "deletePublication",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/posts/65e3a3e6fb2a4b1cb334c933",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-02T21:33:55.415Z",
+            "modified": "2024-03-02T22:35:26.662Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzODg2MWMxNjAwMzAzMTMwMTY0NmYiLCJpYXQiOjE3MDk0MTg4MTIsImV4cCI6MTcwOTQyMjQxMn0.DyAA90-Ne2z1ti12lUD7ptqEi6jZOaWCI7A8J5LD5g4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
