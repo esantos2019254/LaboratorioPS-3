@@ -1,6 +1,5 @@
 import { response, request } from "express";
 import Publication from "../posts/publication.model.js";
-import User from "../users/user.model.js";
 import Comment from "./comment.model.js"
 
 export const commentsGet = async (req = request, res = response) => {
@@ -22,17 +21,32 @@ export const commentsGet = async (req = request, res = response) => {
 }
 
 export const commentsPost = async (req, res) => {
-
-    const { publicationId ,comment } = req.body;
+    
+    const { publicationId , comment } = req.body;
     const userId = req.user.id;
 
-    const comments = new Comment({comment, publicationId, userId: userId});
+    try {
 
-    await comments.save();
+        const newComment = new Comment({ comment, publicationId, userId });
+        await newComment.save();
 
-    res.status(200).json({
-        comments
-    });
+        // Obtener la publicación correspondiente
+        const publication = await Publication.findById(publicationId);
+        if (!publication) {
+            return res.status(404).json({ message: 'Publication not found' });
+        }
+
+        publication.comments.push(newComment);
+        await publication.save();
+
+        res.status(201).json({ 
+            newComment 
+        });
+        
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: 'Error creating comment' });
+    }
 }
 
 export const getCommentById = async (req, res) => {

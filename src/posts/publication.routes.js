@@ -48,7 +48,8 @@ router.put(
         check("id").custom(existsPublicationById),
         validateUserUpdate,
         validateFields,
-    ], postsPut);
+    ], postsPut
+);
 
 router.delete(
     "/:id",
@@ -58,6 +59,7 @@ router.delete(
         check("id").custom(existsPublicationById),
         validateUserUpdate,
         validateFields,
-    ], postsDelete);
+    ], postsDelete
+);
 
 export default router;
