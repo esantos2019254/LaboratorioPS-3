@@ -1,4 +1,4 @@
-import { response, request} from "express";
+import { response, request } from "express";
 import Publication from "./publication.model.js";
 
 export const postsGet = async (req = request, res = response) => {
@@ -30,6 +30,7 @@ export const postsPost = async (req, res) => {
 
     const {tittle, mainText, category} = req.body;
     const authorId = req.user.id;
+    
     const publication = new Publication({tittle, mainText, category, author: authorId});
 
     await publication.save();
@@ -53,7 +54,7 @@ export const getPublicationById = async (req, res) => {
 export const postsPut = async (req, res) => {
     
     const { id } = req.params;
-    const { _id, estate, author, ...resto } = req.body;
+    const { _id, state, author, ...resto } = req.body;
 
     await Publication.findByIdAndUpdate(id, resto);
     const publication = await Publication.findOne({_id: id});
@@ -61,7 +62,7 @@ export const postsPut = async (req, res) => {
     res.status(200).json({
         msg: 'Publication successfully updated',
         publication
-    })
+    });
 }
 
 export const postsDelete = async (req, res) => {
