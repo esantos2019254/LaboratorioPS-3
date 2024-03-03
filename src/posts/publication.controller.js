@@ -28,6 +28,7 @@ export const postsGet = async (req = request, res = response) => {
             ...post,
             author: post.author.userName,
             comments: post.comments ? post.comments.map(comment => ({
+                _id: comment._id,
                 comment: comment.comment,
                 author: comment.userId.userName
             })) : []
