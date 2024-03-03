@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const publicationSchema = mongoose.Schema({
-    title: {
+    tittle: {
         type: String,
         require: [true, 'title is required']
     },

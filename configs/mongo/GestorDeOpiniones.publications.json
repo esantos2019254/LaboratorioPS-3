@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "65e506665793677cb37ed521"
+  },
+  "tittle": "Las redes",
+  "mainText": "Las redes sociales han transformado radicalmente la manera en que nos comunicamos, interactuamos y compartimos información en la era digital. Desde la expansión de plataformas como Facebook, Twitter, Instagram y LinkedIn hasta la emergencia de nuevas redes especializadas como TikTok o Clubhouse, el tejido de conexiones virtuales ha crecido exponencialmente.",
+  "category": "Tecnologia",
+  "author": {
+    "$oid": "65e506385793677cb37ed51a"
+  },
+  "comments": [
+    {
+      "$oid": "65e506ed5793677cb37ed52e"
+    },
+    {
+      "$oid": "65e506f45793677cb37ed534"
+    }
+  ],
+  "state": true,
+  "__v": 2
+},
+{
+  "_id": {
+    "$oid": "65e506865793677cb37ed524"
+  },
+  "tittle": "Los videojuegos",
+  "mainText": "Los videojuegos han evolucionado de simples pasatiempos a formas de entretenimiento interactivas y profundamente inmersivas que abarcan una amplia gama de géneros y plataformas. Desde los clásicos arcades hasta los juegos de consola de última generación y los populares títulos móviles, la industria del videojuego ha crecido exponencialmente, atrayendo a jugadores de todas las edades y orígenes. Más allá del entretenimiento",
+  "category": "Tecnologia",
+  "author": {
+    "$oid": "65e506385793677cb37ed51a"
+  },
+  "comments": [
+    {
+      "$oid": "65e5076b5793677cb37ed555"
+    }
+  ],
+  "state": true,
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "65e506c25793677cb37ed528"
+  },
+  "tittle": "La pandemia",
+  "mainText": "La pandemia ha sacudido al mundo entero, trastornando nuestras vidas de maneras inimaginables. Desde su inicio, el brote de COVID-19 ha alterado radicalmente la forma en que vivimos, trabajamos y nos relacionamos. El distanciamiento social, el uso generalizado de mascarillas y las restricciones de viaje se convirtieron en la nueva normalidad, mientras que millones de personas enfrentaron desafíos económicos",
+  "category": "Ciencia",
+  "author": {
+    "$oid": "65e506485793677cb37ed51d"
+  },
+  "comments": [
+    {
+      "$oid": "65e5070e5793677cb37ed53e"
+    },
+    {
+      "$oid": "65e5073f5793677cb37ed54a"
+    }
+  ],
+  "state": true,
+  "__v": 2
+}]

@@ -1,25 +1,25 @@
 {
     "client": "Thunder Client",
     "collectionName": "Login",
-    "dateExported": "2024-03-01T17:11:38.032Z",
+    "dateExported": "2024-03-03T23:18:17.756Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "5863907d-d79a-4821-a1b7-bf8860ac5eda",
-            "colId": "f22badce-3148-4363-8ac9-44c120220648",
+            "_id": "1c2d4e85-62b4-4736-9b35-8872ed4e8b1e",
+            "colId": "29ed444b-24f4-40bc-81ec-e3bc86294015",
             "containerId": "",
             "name": "Log in",
             "url": "http://localhost:3000/gestorOpinionApi/v1/auth/login",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2024-03-01T14:48:47.872Z",
-            "modified": "2024-03-01T16:46:57.110Z",
+            "created": "2024-03-02T00:58:25.333Z",
+            "modified": "2024-03-03T23:12:50.406Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"emailOrUserName\": \"rgarcia\",\n  \"password\": \"12345678\"\n}",
+                "raw": "{\n  \"emailOrUserName\": \"braulio15\",\n  \"password\": \"123456\"\n}",
                 "form": []
             },
             "tests": []

@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "65e506ed5793677cb37ed52e"
+  },
+  "comment": "Iteresante tema",
+  "publicationId": {
+    "$oid": "65e506665793677cb37ed521"
+  },
+  "userId": {
+    "$oid": "65e506485793677cb37ed51d"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e506f45793677cb37ed534"
+  },
+  "comment": "Muy buena publicacion",
+  "publicationId": {
+    "$oid": "65e506665793677cb37ed521"
+  },
+  "userId": {
+    "$oid": "65e506485793677cb37ed51d"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5070e5793677cb37ed53e"
+  },
+  "comment": "Comentando mi propia publicacion",
+  "publicationId": {
+    "$oid": "65e506c25793677cb37ed528"
+  },
+  "userId": {
+    "$oid": "65e506485793677cb37ed51d"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5073f5793677cb37ed54a"
+  },
+  "comment": "Buena publicacion",
+  "publicationId": {
+    "$oid": "65e506c25793677cb37ed528"
+  },
+  "userId": {
+    "$oid": "65e506385793677cb37ed51a"
+  },
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e5076b5793677cb37ed555"
+  },
+  "comment": "Tema interesante",
+  "publicationId": {
+    "$oid": "65e506865793677cb37ed524"
+  },
+  "userId": {
+    "$oid": "65e506295793677cb37ed517"
+  },
+  "state": true,
+  "__v": 0
+}]

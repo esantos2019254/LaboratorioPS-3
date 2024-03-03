@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "Posts",
-    "dateExported": "2024-03-02T22:36:15.757Z",
+    "dateExported": "2024-03-03T23:18:25.328Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,17 +14,17 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-03-02T19:59:04.576Z",
-            "modified": "2024-03-02T22:34:19.028Z",
+            "modified": "2024-03-03T21:45:30.727Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzODg2MWMxNjAwMzAzMTMwMTY0NmYiLCJpYXQiOjE3MDk0MTg4MTIsImV4cCI6MTcwOTQyMjQxMn0.DyAA90-Ne2z1ti12lUD7ptqEi6jZOaWCI7A8J5LD5g4"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTg5M2U5ZDU3MTQxN2I1Mjc3NDgiLCJpYXQiOjE3MDk1MDIzMTksImV4cCI6MTcwOTUwNTkxOX0.B8c38zbJfeiCVhjeVh2fUfaRc7lTSK4XU9lnZZqYqf0"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"tittle\": \"Las redes\",\n  \"mainText\": \"asdfasdfsadfsdafsadfsadfsadfasdffffffffffffffffffffffffffffffffffffffdsffffffffffffffffffffffasdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdsfasdfsdafasdfsdafsadfasdfasdfsdfasdfsadfasdfasdfasdfsdafsdafasdfsadfsdafsdffdfdfffdafsdfsdfsdf\",\n  \"category\": \"Tecnologia\"\n}",
+                "raw": "{\n  \"tittle\": \"Las redes\",\n  \"mainText\": \"Las redes sociales han transformado radicalmente la manera en que nos comunicamos, interactuamos y compartimos información en la era digital. Desde la expansión de plataformas como Facebook, Twitter, Instagram y LinkedIn hasta la emergencia de nuevas redes especializadas como TikTok o Clubhouse, el tejido de conexiones virtuales ha crecido exponencialmente.\",\n  \"category\": \"Tecnologia\"\n}",
                 "form": []
             },
             "tests": []
@@ -48,21 +48,21 @@
             "colId": "f186a674-09ed-47d4-a04d-b27f4cae22cb",
             "containerId": "",
             "name": "editPublication",
-            "url": "http://localhost:3000/gestorOpinionApi/v1/posts/65e3888cc160030313016473",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/posts/65e4ef2bc77ff66c4f9efdcd",
             "method": "PUT",
             "sortNum": 30000,
             "created": "2024-03-02T20:29:05.734Z",
-            "modified": "2024-03-02T21:27:31.279Z",
+            "modified": "2024-03-03T21:48:46.896Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxMjliYzE4YTYzNjdmZjU4OTQ1ZjAiLCJpYXQiOjE3MDk0MTQzNjEsImV4cCI6MTcwOTQxNzk2MX0.HoI3vH8niGO-a9EkMEa_IomUorqs6HkiiR2jLRurHJQ"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZThhYmU5ZDU3MTQxN2I1Mjc3NGIiLCJpYXQiOjE3MDk1MDI0NjQsImV4cCI6MTcwOTUwNjA2NH0.6Xihs015zV9N-crtrUvbDi_CbfLR37NNF1oIkB8m2Z0"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"tittle\": \"Lenguaje\",\n  \"mainText\": \"asdfasdfsadfsdafsadfsadfsadfasdfffffffffffffffffffffffffffffffffffffffffffffffffffffffaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafffffdsfasdfsdafasdfsdafsadfasdfasdfsdfasdfsadfasdfasdfasdfsdafsdafasdfsadfsdafsdffdfdfffdafsdfsdfsdf\",\n  \"category\": \"Informacion\"\n}",
+                "raw": "{\n  \"tittle\": \"La pandemia\",\n  \"mainText\": \"La pandemia ha sacudido al mundo entero, trastornando nuestras vidas de maneras inimaginables. Desde su inicio, el brote de COVID-19 ha alterado radicalmente la forma en que vivimos, trabajamos y nos relacionamos. El distanciamiento social, el uso generalizado de mascarillas y las restricciones de viaje se convirtieron en la nueva normalidad, mientras que millones de personas enfrentaron desafíos económicos.\",\n  \"category\": \"Ciencia\"\n}",
                 "form": []
             },
             "tests": []
@@ -72,15 +72,15 @@
             "colId": "f186a674-09ed-47d4-a04d-b27f4cae22cb",
             "containerId": "",
             "name": "deletePublication",
-            "url": "http://localhost:3000/gestorOpinionApi/v1/posts/65e3a3e6fb2a4b1cb334c933",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/posts/65e4ef7ae249ba5dd12c27b1",
             "method": "DELETE",
             "sortNum": 40000,
             "created": "2024-03-02T21:33:55.415Z",
-            "modified": "2024-03-02T22:35:26.662Z",
+            "modified": "2024-03-03T21:51:12.654Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUzODg2MWMxNjAwMzAzMTMwMTY0NmYiLCJpYXQiOjE3MDk0MTg4MTIsImV4cCI6MTcwOTQyMjQxMn0.DyAA90-Ne2z1ti12lUD7ptqEi6jZOaWCI7A8J5LD5g4"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZTg5M2U5ZDU3MTQxN2I1Mjc3NDgiLCJpYXQiOjE3MDk1MDI2NDEsImV4cCI6MTcwOTUwNjI0MX0.efWdS_jiHQqCbKuxZZ3utXEZxqxfhuyli2On_NE4BcQ"
                 }
             ],
             "params": [],

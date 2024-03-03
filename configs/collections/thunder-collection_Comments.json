@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Comments",
+    "dateExported": "2024-03-03T23:18:32.094Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8f0e8db4-7d0d-4fb8-b75a-8f40dd4576d9",
+            "colId": "ea8f4b34-29ef-4845-9b47-1ad1f9877e98",
+            "containerId": "",
+            "name": "newComment",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/comments",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-03T18:58:23.259Z",
+            "modified": "2024-03-03T21:59:50.665Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZThhYmU5ZDU3MTQxN2I1Mjc3NGIiLCJpYXQiOjE3MDk1MDMxNjIsImV4cCI6MTcwOTUwNjc2Mn0.zl-iDo-wy_ftBXMgcGMD0WewYEO40xTiCfQ5sJwtKTM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comment\": \"Iteresante tema\",\n  \"publicationId\": \"65e4ef7ae249ba5dd12c27b1\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "716196aa-b1ca-4a03-96b5-cdd36d978e35",
+            "colId": "ea8f4b34-29ef-4845-9b47-1ad1f9877e98",
+            "containerId": "",
+            "name": "editComment",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/comments/65e4f28ae249ba5dd12c282a",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-03T19:48:44.557Z",
+            "modified": "2024-03-03T23:14:38.534Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZThmMWU5ZDU3MTQxN2I1Mjc3NGUiLCJpYXQiOjE3MDk1MDc1NzAsImV4cCI6MTcwOTUxMTE3MH0.HeI89ov5QV1ek43CXfd7L6YhP-ajyx4Xo6YS7x2cI2s"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"comment\": \"A mi no me gusto tu publicación\",\n  \"publicationId\": \"65e4ef5ce249ba5dd12c27ad\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c7555a2b-3ae9-4818-a1ee-558cd5fbb5de",
+            "colId": "ea8f4b34-29ef-4845-9b47-1ad1f9877e98",
+            "containerId": "",
+            "name": "deleteComment",
+            "url": "http://localhost:3000/gestorOpinionApi/v1/comments/65e4f2d6e249ba5dd12c2836",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-03T20:49:25.400Z",
+            "modified": "2024-03-03T23:16:55.777Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU0ZThmMWU5ZDU3MTQxN2I1Mjc3NGUiLCJpYXQiOjE3MDk1MDc3NTUsImV4cCI6MTcwOTUxMTM1NX0.JjLZ6hc-OTzYL9GxmVpxyJncOuSAB_h27lgact-v6gQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
