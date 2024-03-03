@@ -1,5 +1,6 @@
 import { validationResult } from "express-validator";
 import Publication from '../posts/publication.model.js';
+import Comment from '../comments/comment.model.js';
 
 export const validateFields = (req, res, next) => {
 
@@ -30,6 +31,36 @@ export const validateUserUpdate = async (req, res, next) => {
         if (publication.author.toString() !== authorId) {
             return res.status(401).json({
                 msg: 'You are not authorized to edit or delete this post.'
+            });
+        }
+
+        next();
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({
+            msg: 'contact the admin'
+        });
+    }
+}
+
+export const validateCommentUpdate = async (req, res, next) => {
+    
+    const userId = req.user.id;
+
+    try {
+
+        const { id } = req.params;
+        const comment = await Comment.findOne({_id: id});
+
+        if (!userId) {
+            return res.status(404).json({
+                msg: 'The comment not exists.'
+            });
+        }
+
+        if (comment.userId.toString() !== userId) {
+            return res.status(401).json({
+                msg: 'You can only modify or delete your comments.'
             });
         }
 

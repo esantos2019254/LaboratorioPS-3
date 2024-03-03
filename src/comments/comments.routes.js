@@ -9,7 +9,8 @@ import {
 } from './comment.controller.js';
 import { existsCommentById } from "../helpers/db-validator.js";
 import {
-    validateFields
+    validateFields,
+    validateCommentUpdate
 } from "../middlewares/validate-fields.js";
 import { validateJWT } from "../middlewares/validar-jwt.js";
 
@@ -44,6 +45,7 @@ router.put(
         validateJWT,
         check("id", "This id is not valid").isMongoId(),
         check("id").custom(existsCommentById),
+        validateCommentUpdate,
         validateFields,
     ], commentsPut
 );
@@ -54,6 +56,7 @@ router.delete(
         validateJWT,
         check("id", "This id is not valid").isMongoId(),
         check("id").custom(existsCommentById),
+        validateCommentUpdate,
         validateFields,
     ], commentDelete
 );

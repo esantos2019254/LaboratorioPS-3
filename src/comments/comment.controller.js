@@ -21,7 +21,7 @@ export const commentsGet = async (req = request, res = response) => {
 }
 
 export const commentsPost = async (req, res) => {
-    
+
     const { publicationId , comment } = req.body;
     const userId = req.user.id;
 
@@ -65,7 +65,7 @@ export const commentsPut = async (req, res) => {
     const { _id, state, publicationId, userId, ...resto} = req.body;
 
     await Comment.findByIdAndUpdate(id, resto);
-    const comments = await Comment.finOne({_id: id});
+    const comments = await Comment.findOne({_id: id});
 
     res.status(200).json({
         msg: 'Comment successfully updated',
